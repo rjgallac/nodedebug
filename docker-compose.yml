@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+
+  node-application:
+    build: .
+    container_name: node-application
+    volumes:
+      - ./src:/app/src
+      - ./package.json:/app/package.json
+    working_dir: /app
+    command: "npm start"
+    ports:
+      - "3000:3000"
