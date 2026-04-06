@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --inspect=0.0.0.0:9229 src/main.js",
+    "start": "node --inspect=0.0.0.0:9229 src/main.ts",
     "devts": "nodemon --watch src/**/*.ts --exec \"node --inspect-brk=0.0.0.0:9229 --require ts-node/register src/main.ts\"",
     "dev": "tsx --inspect=0.0.0.0:9229 src/main.ts"
   },
